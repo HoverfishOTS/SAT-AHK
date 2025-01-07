@@ -18,8 +18,8 @@
  
 # SAT Downloading from Tableau (download.ahk)
  An automated hotkey script to download SAT score results directly from Tableau. \
- Make sure the last thing selected is the week number from the drop down menu, then press `Control + q` and enter the number of students to start downloading. \
+ Make sure the last thing selected is the week number from the drop down menu, then press `Control + q` and enter the number of students to start downloading. 
 
 # SAT Printing from Google Drive (printing.ahk)
  An automated hotkey script to print SAT score results from Google Drive, can be modified to print other things. \
- Make sure the Google Drive folder is named as "Final Report", and the first PDF document from the top is opened as a preview. Press `Control + Alt + q` and enter the number of files to start printing. \
+ Make sure the Google Drive folder is named as "Final Report", and the first PDF document from the top is opened as a preview. Press `Control + Alt + q` and enter the number of files to start printing. 
