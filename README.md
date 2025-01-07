@@ -10,7 +10,7 @@
   - `Alt + n`: Next answer choice, if the next choice hasn't been open and saved in text editor mode (can be directly edited without pressing edit). Press again to navigate to the next choice, up to 4 times starting from the question's text editor
   - `Alt + m`: Next answer choice, if the next choice has already been opened and saved in text editor mode (can't be directly edited without pressing edit). Press again to navigate to the next choice, up to 4 times starting from the question's text editor
   Note: `Alt + n` and `Alt + m` can be used alternatingly/interchangeably, if some answer choices are edited and others aren't. Additionally, when on answer choice D, it will save and exit the question
-  - `Alt + h`: Resets answer count to 0, useful if amount of hotkey presses in between was messed up and you're starting a new question
+  - `Alt + h`: Resets answer count to 0, useful if amount of hotkey presses in between were messed up and you're starting a new question
   
  The next two are if the question needs be an FRQ
   - `Alt + k`: Changes the question to an FRQ with a single answer. Press again if you need additional possible answers. 
