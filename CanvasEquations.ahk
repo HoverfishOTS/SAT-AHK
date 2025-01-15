@@ -2,7 +2,7 @@
 #SingleInstance
 SetKeyDelay 500
 
-!a::
+!a:: ;Enter Equation editor
 {
     If(WinExist("Math Module") && inEquationEdit == false) {
         Send "!{F9}"
@@ -17,7 +17,7 @@ SetKeyDelay 500
     }
 }
 
-!z::
+!z:: ;Exit equation editor
 {
     If(WinExist("Math Module") && inEquationEdit == true) {
         Send "{Shift down}"
@@ -30,7 +30,7 @@ SetKeyDelay 500
     }
 }
 
-!n::
+!n:: ;next answer choice, unedited
 {
     If(WinExist("Math Module") && inEquationEdit == false) {
         If (exist == false) { ;First time using since start up
@@ -44,8 +44,10 @@ SetKeyDelay 500
                 Send "{Shift down}"
                 Send "{Tab 3}"
                 Send "{Shift up}"
-                Sleep 750
+                Sleep 500
                 Send "{WheelUp 1}"
+                Send "{Down}"
+                Send "{Space}"
             } else if (x == 4) { ;From Answer D to Finish
                 Send "{Tab 2}"
                 Send "{Enter}"
@@ -59,15 +61,17 @@ SetKeyDelay 500
                 Send "{Shift down}"
                 Send "{Tab 3}"
                 Send "{Shift up}"
-                Sleep 750
+                Sleep 500
                 Send "{WheelUp 1}"
+                Send "{Down}"
+                Send "{Space}"
             }
             Global x += 1
         }
     }
 }
 
-!m::
+!m:: ;next answer choice, edited
 {
     If(WinExist("Math Module") && inEquationEdit == false) {
         If (exist == false) {
@@ -81,8 +85,10 @@ SetKeyDelay 500
                 Send "{Shift down}"
                 Send "{Tab 3}"
                 Send "{Shift up}"
-                Sleep 750
+                Sleep 500
                 Send "{WheelUp 1}"
+                Send "{Down}"
+                Send "{Space}"
             } else if (x == 4) {
                 Send "{Tab 2}"
                 Send "{Enter}"
@@ -96,8 +102,10 @@ SetKeyDelay 500
                 Send "{Shift down}"
                 Send "{Tab 3}"
                 Send "{Shift up}"
-                Sleep 750
+                Sleep 500
                 Send "{WheelUp 1}"
+                Send "{Down}"
+                Send "{Space}"
             }
             Global x += 1
         }
